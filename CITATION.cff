@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "Si usa este código o estos datos, cite el documento de trabajo y este repositorio."
+title: "Legislacion-Minera"
+abstract: "Código en R y datos para reproducir el Documento de trabajo N.° 6, La agenda minera en el Congreso chileno: votos, partidos, territorio y cambios en el texto, 2018–2026."
+type: software
+authors:
+  - family-names: "Bottinelli Baltra"
+    given-names: "Lucas"
+    orcid: "https://orcid.org/0009-0000-4865-7261"
+    affiliation: "Pontificia Universidad Católica de Chile"
+version: "1.0.0"
+date-released: "2026-11-10"
+license: MIT
+repository-code: "https://github.com/LucasBB1/Legislacion-Minera"
+keywords:
+  - legislación minera
+  - votaciones nominales
+  - disciplina partidaria
+  - conexión electoral
+  - reutilización de texto
+  - Congreso Nacional
+  - Chile
+preferred-citation:
+  type: report
+  title: "La agenda minera en el Congreso chileno: votos, partidos, territorio y cambios en el texto, 2018–2026"
+  authors:
+    - family-names: "Bottinelli Baltra"
+      given-names: "Lucas"
+  year: 2026
+  number: "6"
+  collection-title: "Documento de trabajo"
+  doi: "10.5281/zenodo.24124288"
+  url: "https://doi.org/10.5281/zenodo.24124288"
