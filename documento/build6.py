@@ -105,8 +105,8 @@ hall = [l[2:].strip() for l in seccion('Hallazgos').split('\n') if l.startswith(
 assert len(hall) == 6, len(hall)
 for i, h in enumerate(hall): set_text(P[28 + i], inline(h))
 set_text(P[35], [('Bottinelli Baltra, L. (2026). ', {}), (TITULO, {'i': 1}), (' (Documento de trabajo N.° 6). https://doi.org/10.5281/zenodo.24124288', {})])
-CODE_DOI = ''  # Escribir aquí ': https://doi.org/10.5281/zenodo.XXXXXXX' tras la release v1.0.0
-set_text(P[37], [(f'Los datos procesados y el código en R están disponibles en {REPO} bajo licencia MIT (código) y CC BY 4.0 (datos, tablas, figuras y texto). Los documentos de tramitación se descargan del Senado con los scripts 01 y 01b y se procesan con los scripts 01c a 01e, las votaciones nominales provienen de la base del Documento de trabajo N.° 5 (https://doi.org/10.5281/zenodo.24026991) y el empleo minero por comuna, del servicio de datos del Censo 2024 del INE. El código y los datos de esta versión se archivarán en Zenodo{CODE_DOI}.', {})])
+CODE_DOI = ': https://doi.org/10.5281/zenodo.24124549'
+set_text(P[37], [(f'Los datos procesados y el código en R están disponibles en {REPO} bajo licencia MIT (código) y CC BY 4.0 (datos, tablas, figuras y texto). Los documentos de tramitación se descargan del Senado con los scripts 01 y 01b y se procesan con los scripts 01c a 01e, las votaciones nominales provienen de la base del Documento de trabajo N.° 5 (https://doi.org/10.5281/zenodo.24026991) y el empleo minero por comuna, del servicio de datos del Censo 2024 del INE. El código y los datos de esta versión están archivados en Zenodo{CODE_DOI}.', {})])
 set_text(P[38], [(TITULO, {'b': 1})])
 
 el = P[39]._p
