@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Who leaves and what changes? Party switching on the Chilean right — Lucas Bottinelli Baltra</title>
+  <meta name="description" content="Working Paper No. 5. Party exits on the Chilean right and roll-call voting in the Chamber of Deputies, 2014–2026.">
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+  <link rel="alternate" hreflang="es" href="https://lucasbb1.github.io/posts/cambio-partido-derecha.html">
+  <link rel="alternate" hreflang="en" href="https://lucasbb1.github.io/en/posts/cambio-partido-derecha.html">
+  <link rel="alternate" hreflang="x-default" href="https://lucasbb1.github.io/posts/cambio-partido-derecha.html">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%231f4e5f%22/%3E%3Ctext x=%2216%22 y=%2221%22 font-family=%22Georgia,serif%22 font-size=%2214%22 font-weight=%22700%22 fill=%22%23ffffff%22 text-anchor=%22middle%22%3ELB%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="site">
+    <nav>
+      <a class="brand" href="../index.html">Lucas Bottinelli Baltra</a>
+      <span class="nav-tools"><a class="lang-toggle" href="../../posts/cambio-partido-derecha.html" hreflang="es" lang="es" data-lang="es" title="Leer en español" aria-label="Leer en español">ES</a><button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">◐</button></span>
+      <div class="nav-links">
+        <a class="navlink" href="../index.html">Home</a>
+        <a class="navlink" href="../experiencia.html">Experience</a>
+        <a class="navlink" href="../investigacion.html">Research</a>
+        <a class="navlink" href="../consultoria.html">Consulting</a>
+        <a class="navlink active" href="../blog.html">Blog</a>
+        <a class="navlink" href="../cv.html">CV</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <article class="post">
+      <h1>Who leaves and what changes? Party exits on the Chilean right and voting in the Chamber of Deputies, 2014–2026</h1>
+      <p class="post-meta">Lucas Bottinelli Baltra (<a href="https://orcid.org/0009-0000-4865-7261">ORCID 0009-0000-4865-7261</a>) · MA candidate in Political Science, Pontificia Universidad Católica de Chile<br>Working Paper No. 5 · November 2026 · Not peer reviewed · Full paper in Spanish</p>
+      <div class="doc-links">
+        <a href="../../documentos/Bottinelli-Baltra_2026_Cambio-partido-derecha.pdf">Full paper (PDF, Spanish)</a>
+        <a href="https://github.com/LucasBB1/Cambio-Partido-Derecha">Data and code</a>
+        <a href="https://doi.org/10.5281/zenodo.24026531">DOI: 10.5281/zenodo.24026531</a>
+      </div>
+      <p>Between 2014 and 2026 there were twenty-six resignations of deputies from right-wing parties during their term. In twelve of them, the deputy ended up in the Republican Party, the National Libertarian Party or the Social Christian Party. Part of the recomposition of the Chilean right thus took place inside Congress, not only at the ballot box.</p>
+      <p>This working paper asks who leaves and what changes in their votes. It returns to the question of my undergraduate thesis but rebuilds it from scratch, with the full universe of exits and the legislative behaviour of those who leave and those who stay. This entry summarises the findings; the full paper develops the theoretical framework, the method and the limitations.</p>
+      <h2>Data and methods</h2>
+      <p>Each exit has a public announcement date, destination, stated reason and verifiable source. Each deputy's position in each quarter is estimated with a dynamic ideal-point model on 864,324 roll-call votes on bills, under two smoothing specifications reported side by side. With those positions, the paper estimates an exit hazard model, an event study with a control group of deputies who stay and case-by-case process tracing. The analysis is extended to the Senate with the same method. All processing is reproducible in R.</p>
+      <figure>
+        <img src="../../img/cambio-partido-derecha/g1-salidas.png" alt="Dot chart of exits from right-wing parties during the term between 2014 and 2026, by date, party of origin and destination" loading="lazy">
+        <figcaption>Exits from right-wing parties during the term in the Chamber, 2014–2026, by party of origin and destination (labels in Spanish).</figcaption>
+      </figure>
+      <h2>Five findings</h2>
+      <h3>1. Those who leave for the radical right were already to the right of their party</h3>
+      <p>Eleven of the twelve voted, in the previous year, in the half of their caucus closest to the radical right. Their mean percentile within the party is 0.78 or 0.69 depending on the specification, compared with 0.50 expected if position did not matter. Other exits from the mainstream right show the opposite pattern, because they come from deputies located to the left of their party.</p>
+      <figure>
+        <img src="../../img/cambio-partido-derecha/g2-percentil-previo.png" alt="Dot chart of each deputy's position percentile within the party of origin in the year before the exit, under two specifications" loading="lazy">
+        <figcaption>Position percentile in the year before the exit within the party of origin, by case and specification (labels in Spanish).</figcaption>
+      </figure>
+      <h3>2. Position predicts the exit; the district does not</h3>
+      <p>Each tenth of a standard deviation to the right of the party median multiplies the risk of leaving for the radical right by between 1.4 and 1.9, whether the right was in government or in opposition. The radical-right vote in the district, the deputy's personal vote and the term limit have no detectable effect.</p>
+      <h3>3. The distance is not on moral issues</h3>
+      <p>Those who leave for the radical right differ from their party on votes about law and order and the economy, but not on gender, sexuality and family, where the UDI and RN already vote conservatively. The radical right recruited the toughest legislators on security and the most orthodox on the economy, not the most morally conservative.</p>
+      <h3>4. Votes change after the exit, not before</h3>
+      <p>Before leaving, the votes of those who leave barely diverge from their party, in a range similar to colleagues who stay. In the following year, they sit 0.4 standard deviations further right than their party of origin and their agreement with that party's majority falls by 11 points. The exit releases preferences that party discipline had held back.</p>
+      <figure>
+        <img src="../../img/cambio-partido-derecha/g3-evento-posicion.png" alt="Line chart of position relative to the party of origin in the quarters before and after the exit, compared with a control group" loading="lazy">
+        <figcaption>Position relative to the median of the party of origin in the quarters before and after the exit, compared with deputies who stay (labels in Spanish).</figcaption>
+      </figure>
+      <h3>5. Distance is almost necessary, not sufficient</h3>
+      <p>Process tracing shows that almost everyone who left for the radical right was on the right flank of their party, but so were others who stayed. The trigger is usually a conflict with the party leadership or a Senate or presidential candidacy that the original party did not offer. There were no exits to the radical right in the Senate, but the senator RN suspended for supporting José Antonio Kast was among the furthest right in his caucus.</p>
+      <h2>Scope</h2>
+      <p>Twelve exits allow a rank test and a simple hazard model, but not precise estimates of several variables at once, and in one specification the model depends on the most extreme cases. The issue-area analysis is suggestive rather than conclusive. The paper also shows that the Chamber's official membership register dates exits with a median delay of 72.5 days and omits some of them, so the verified dataset of exits is published for other studies.</p>
+      <h2>How to cite</h2>
+      <p class="cite">Bottinelli Baltra, L. (2026). <em>¿Quién se va y qué cambia? Salidas de partido en la derecha chilena y el voto en la Cámara de Diputadas y Diputados, 2014–2026</em> (Documento de trabajo N.° 5). <a href="https://doi.org/10.5281/zenodo.24026531">https://doi.org/10.5281/zenodo.24026531</a></p>
+      <p>The R code and processed data for this version are archived in Zenodo: <a href="https://doi.org/10.5281/zenodo.24026991">https://doi.org/10.5281/zenodo.24026991</a>.</p>
+      <a class="back" href="../blog.html">← Back to the blog</a>
+    </article>
+  </main>
+
+  <footer class="site">
+    Lucas Bottinelli Baltra · Santiago, Chile
+  </footer>
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var saved = null; try { saved = localStorage.getItem('theme'); } catch (e) {}
+      if (saved) root.setAttribute('data-theme', saved);
+      function current() {
+        if (root.getAttribute('data-theme')) return root.getAttribute('data-theme');
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.addEventListener('DOMContentLoaded', function () {
+        var btn = document.getElementById('themeToggle');
+        if (!btn) return;
+        btn.addEventListener('click', function () {
+          var next = current() === 'dark' ? 'light' : 'dark';
+          root.setAttribute('data-theme', next);
+          try { localStorage.setItem('theme', next); } catch (e) {}
+        });
+      });
+    })();
+  </script>
+  <script>
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a.lang-toggle');
+      if (a) { try { localStorage.setItem('lang', a.getAttribute('data-lang')); } catch (err) {} }
+    });
+  </script>
+</body>
+</html>

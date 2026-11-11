@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fin del atrincheramiento: el límite de reelección y la competencia municipal en Chile — Lucas Bottinelli Baltra</title>
+  <meta name="description" content="Documento de trabajo N.° 2. Evaluación del límite de reelección de alcaldes (Ley N.° 21.238) en las 345 comunas de Chile, 2012–2024, con datos oficiales del SERVEL.">
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+  <link rel="alternate" hreflang="es" href="https://lucasbb1.github.io/posts/limite-reeleccion-alcaldes.html">
+  <link rel="alternate" hreflang="en" href="https://lucasbb1.github.io/en/posts/limite-reeleccion-alcaldes.html">
+  <link rel="alternate" hreflang="x-default" href="https://lucasbb1.github.io/posts/limite-reeleccion-alcaldes.html">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%231f4e5f%22/%3E%3Ctext x=%2216%22 y=%2221%22 font-family=%22Georgia,serif%22 font-size=%2214%22 font-weight=%22700%22 fill=%22%23ffffff%22 text-anchor=%22middle%22%3ELB%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="site">
+    <nav>
+      <a class="brand" href="../index.html">Lucas Bottinelli Baltra</a>
+      <span class="nav-tools"><a class="lang-toggle" href="../en/posts/limite-reeleccion-alcaldes.html" hreflang="en" lang="en" data-lang="en" title="Read in English" aria-label="Read in English">EN</a><button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" title="Cambiar tema">◐</button></span>
+      <div class="nav-links">
+        <a class="navlink" href="../index.html">Inicio</a>
+        <a class="navlink" href="../experiencia.html">Experiencia</a>
+        <a class="navlink" href="../investigacion.html">Investigación</a>
+        <a class="navlink" href="../consultoria.html">Consultoría</a>
+        <a class="navlink active" href="../blog.html">Blog</a>
+        <a class="navlink" href="../cv.html">CV</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <article class="post">
+      <h1>Fin del atrincheramiento: el límite de reelección y la competencia municipal en Chile, 2012–2024</h1>
+      <p class="post-meta">Lucas Bottinelli Baltra (<a href="https://orcid.org/0009-0000-4865-7261">ORCID 0009-0000-4865-7261</a>) · Candidato a Magíster en Ciencia Política, Pontificia Universidad Católica de Chile<br>Documento de trabajo N.° 2 · Noviembre de 2026 · No evaluado por pares</p>
+
+      <div class="doc-links">
+        <a href="../documentos/Bottinelli-Baltra_2026_Limite-reeleccion-alcaldes.pdf">Documento completo (PDF)</a>
+        <a href="https://github.com/LucasBB1/Incumbencia-Alcaldes">Datos y código</a>
+        <a href="https://doi.org/10.5281/zenodo.23877074">DOI: 10.5281/zenodo.23877074</a>
+      </div>
+
+      <p>
+        En 2020, la Ley N.° 21.238 limitó a tres períodos consecutivos la permanencia de los
+        alcaldes y contabilizó los períodos ya ejercidos. Por eso rigió de inmediato: 96 alcaldes
+        no pudieron repostular en 2021 y otros 69 en 2024. Algunos gobernaban su comuna desde 1992.
+      </p>
+      <p>
+        Este documento de trabajo pregunta qué cambia en una elección municipal cuando el alcalde
+        deja el cargo por el límite legal y no por decisión propia. La distinción importa porque
+        las salidas voluntarias no son aleatorias, mientras que el límite opera por una regla que
+        el alcalde no controla. Esta entrada resume los hallazgos; el documento completo desarrolla
+        el marco teórico, el método y las limitaciones.
+      </p>
+
+      <h2>Datos y métodos</h2>
+      <p>
+        El análisis usa los resultados oficiales del Servicio Electoral (SERVEL) de las elecciones
+        de alcalde de 2012, 2016, 2021 y 2024 en las 345 comunas, junto con los 24 reemplazos de
+        alcaldes ocurridos durante esos períodos, documentados caso a caso. Los períodos ejercidos
+        se cuentan según el criterio del SERVEL, que considera cumplido un período cuando se ejerció
+        más de la mitad del mandato, como electo o como reemplazante. La ventaja del incumbente se
+        estima con una regresión discontinua en elecciones estrechas, y el efecto del límite con
+        diferencias en diferencias apiladas por ola de aplicación (2021 y 2024). Todo el
+        procesamiento es reproducible en R.
+      </p>
+
+      <h2>Cinco hallazgos</h2>
+
+      <h3>1. La ventaja del incumbente es grande</h3>
+      <p>
+        Ganar la alcaldía por un margen estrecho aumenta en 33 puntos porcentuales la probabilidad
+        de ganar la elección siguiente. Cerca del umbral, quien pierde por poco gana la siguiente
+        elección en uno de cada cuatro casos, y quien gana por poco, en uno de cada dos. El
+        resultado se mantiene con distintos anchos de banda y no aparece en umbrales placebo. Esa
+        ventaja es la que el límite retira de la competencia.
+      </p>
+      <figure>
+        <img src="../img/limite-reeleccion/g1-ventaja-incumbente.png" alt="Gráfico de dispersión con la probabilidad de ganar la elección siguiente según el margen en la elección anterior, con un salto en el umbral de cero" loading="lazy">
+        <figcaption>Probabilidad de ganar la elección siguiente según el margen en la elección anterior, 2016–2024. Elaboración propia con datos del SERVEL.</figcaption>
+      </figure>
+
+      <h3>2. El límite abrió la competencia</h3>
+      <p>
+        Las comunas con alcalde inhabilitado sumaron alrededor de 1,5 candidatos a alcalde
+        respecto de la elección anterior, cerca de 45% más. El efecto es casi idéntico en 2021,
+        con voto voluntario (1,43), y en 2024, con voto obligatorio (1,75), lo que reduce la
+        posibilidad de que responda a una coyuntura particular.
+      </p>
+      <figure>
+        <img src="../img/limite-reeleccion/g2-candidatos-por-ola.png" alt="Dos paneles con el promedio de candidatos por comuna entre 2012 y el año del límite, para comunas con alcalde inhabilitado y comunas con incumbente en competencia" loading="lazy">
+        <figcaption>Candidatos a alcalde por comuna antes y en el año del límite, según ola. Promedios con intervalos de confianza al 95%.</figcaption>
+      </figure>
+
+      <h3>3. El alcalde atrincherado disuadía a sus rivales</h3>
+      <p>
+        Mientras su alcalde competía, las comunas que luego quedarían bajo el límite tenían menos
+        candidatos que otras comunas con incumbente en competencia. Es lo que predice la teoría
+        del efecto disuasivo: los aspirantes evitan desafiar a un incumbente fuerte y esperan un
+        escaño abierto. Al quedar fuera por ley, esa competencia contenida emergió de una vez.
+        Dos elecciones antes del límite, ambos grupos evolucionaban de forma paralela.
+      </p>
+      <figure>
+        <img src="../img/limite-reeleccion/g3-estudio-eventos.png" alt="Estudio de eventos con coeficientes cercanos a cero antes del límite y un aumento de alrededor de 1,5 candidatos en la elección con el límite vigente" loading="lazy">
+        <figcaption>Estudio de eventos apilado del número de candidatos, respecto de la elección anterior al límite. Intervalos de confianza al 95%.</figcaption>
+      </figure>
+
+      <h3>4. La salida forzada atrae más candidatos que la voluntaria</h3>
+      <p>
+        Toda elección sin incumbente atrae más candidatos, pero no en la misma medida. El escaño
+        abierto por el límite suma 0,58 candidatos más que el que el alcalde deja por decisión
+        propia. Una explicación posible es que quien se retira por voluntad propia elige el
+        momento y puede ordenar su sucesión.
+      </p>
+
+      <h3>5. El límite no castiga al sector saliente</h3>
+      <p>
+        Sin incumbente, la familia política del alcalde saliente retiene la alcaldía en alrededor
+        de una de cada cinco comunas, sea la salida por ley o voluntaria, frente a tres de cada
+        cinco cuando el incumbente compite. La diferencia entre ambos tipos de salida no es
+        estadísticamente significativa. El límite aumenta la alternancia porque multiplica los
+        escaños abiertos, no porque perjudique al sector del alcalde que se va: en la política
+        municipal chilena, la continuidad descansa más en la persona que en su partido.
+      </p>
+      <figure>
+        <img src="../img/limite-reeleccion/g4-retencion.png" alt="Gráfico de coeficientes con la diferencia en la retención de la alcaldía entre salidas por límite y voluntarias en siete especificaciones" loading="lazy">
+        <figcaption>Diferencia en la retención de la alcaldía entre escaños abiertos por límite legal y por decisión propia, según especificación. Intervalos de confianza al 95%.</figcaption>
+      </figure>
+
+      <h2>Alcance</h2>
+      <p>
+        Los inhabilitados de 2021 se identificaron a partir de una nómina pública, porque el SERVEL
+        no publica los resultados de 2008 en formato de datos, y los reemplazos de alcaldes se
+        reconstruyeron desde la prensa. El estudio mide cuántos candidatos compiten, no su calidad
+        ni el desempeño posterior de las gestiones municipales. De cara a 2028, 46 alcaldes no
+        podrán repostular: una tercera ola, más pequeña que las anteriores.
+      </p>
+
+      <h2>Cómo citar</h2>
+      <p class="cite">
+        Bottinelli Baltra, L. (2026). <em>Fin del atrincheramiento: el límite de reelección y la
+        competencia municipal en Chile, 2012–2024</em> (Documento de trabajo N.° 2).
+        <a href="https://doi.org/10.5281/zenodo.23877074">https://doi.org/10.5281/zenodo.23877074</a>
+      </p>
+
+      <p>
+        El código en R y los datos procesados de esta versión están archivados en Zenodo:
+        <a href="https://doi.org/10.5281/zenodo.23877018">https://doi.org/10.5281/zenodo.23877018</a>.
+      </p>
+
+      <a class="back" href="../blog.html">← Volver al blog</a>
+    </article>
+  </main>
+
+  <footer class="site">
+    Lucas Bottinelli Baltra · Santiago, Chile
+  </footer>
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var saved = null; try { saved = localStorage.getItem('theme'); } catch (e) {}
+      if (saved) root.setAttribute('data-theme', saved);
+      function current() {
+        if (root.getAttribute('data-theme')) return root.getAttribute('data-theme');
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.addEventListener('DOMContentLoaded', function () {
+        var btn = document.getElementById('themeToggle');
+        if (!btn) return;
+        btn.addEventListener('click', function () {
+          var next = current() === 'dark' ? 'light' : 'dark';
+          root.setAttribute('data-theme', next);
+          try { localStorage.setItem('theme', next); } catch (e) {}
+        });
+      });
+    })();
+  </script>
+  <script>
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a.lang-toggle');
+      if (a) { try { localStorage.setItem('lang', a.getAttribute('data-lang')); } catch (err) {} }
+    });
+  </script>
+</body>
+</html>

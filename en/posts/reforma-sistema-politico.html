@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Getting in and staying in: party membership thresholds — Lucas Bottinelli Baltra</title>
+  <meta name="description" content="Working Paper No. 3. The double membership threshold of Chile's political system reform and the 2028 party supply.">
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+  <link rel="alternate" hreflang="es" href="https://lucasbb1.github.io/posts/reforma-sistema-politico.html">
+  <link rel="alternate" hreflang="en" href="https://lucasbb1.github.io/en/posts/reforma-sistema-politico.html">
+  <link rel="alternate" hreflang="x-default" href="https://lucasbb1.github.io/posts/reforma-sistema-politico.html">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%231f4e5f%22/%3E%3Ctext x=%2216%22 y=%2221%22 font-family=%22Georgia,serif%22 font-size=%2214%22 font-weight=%22700%22 fill=%22%23ffffff%22 text-anchor=%22middle%22%3ELB%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="site">
+    <nav>
+      <a class="brand" href="../index.html">Lucas Bottinelli Baltra</a>
+      <span class="nav-tools"><a class="lang-toggle" href="../../posts/reforma-sistema-politico.html" hreflang="es" lang="es" data-lang="es" title="Leer en español" aria-label="Leer en español">ES</a><button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">◐</button></span>
+      <div class="nav-links">
+        <a class="navlink" href="../index.html">Home</a>
+        <a class="navlink" href="../experiencia.html">Experience</a>
+        <a class="navlink" href="../investigacion.html">Research</a>
+        <a class="navlink" href="../consultoria.html">Consulting</a>
+        <a class="navlink active" href="../blog.html">Blog</a>
+        <a class="navlink" href="../cv.html">CV</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <article class="post">
+      <h1>Getting in and staying in: the double membership threshold of the political system reform and the 2028 party supply</h1>
+      <p class="post-meta">Lucas Bottinelli Baltra (<a href="https://orcid.org/0009-0000-4865-7261">ORCID 0009-0000-4865-7261</a>) · MA candidate in Political Science, Pontificia Universidad Católica de Chile<br>Working Paper No. 3 · Version 2.0 · November 2026 · Not peer reviewed · Full paper in Spanish</p>
+      <div class="doc-links">
+        <a href="../../documentos/Bottinelli-Baltra_2026_Reforma-sistema-politico.pdf">Full paper (PDF, Spanish)</a>
+        <a href="https://github.com/LucasBB1/Reforma-Sistema-Politico">Data and code</a>
+        <a href="https://doi.org/10.5281/zenodo.24030166">DOI: 10.5281/zenodo.24030166</a>
+      </div>
+      <p>In 2026, Congress passed the political system reform (Bill No. 17,640-06), which tightens the conditions for creating and maintaining parties. To register a party in a region, 0.3% of the final electoral roll will be required, instead of 0.25% of those who voted, and every party must be present in at least eight regions. Registered parties, in contrast, only need to keep half of that figure in each region, and they have eighteen months from the publication of the law to reach it.</p>
+      <p>This working paper assesses, before the law takes effect, how this double-threshold design reshapes the supply of parties ahead of the 2028 regional and municipal elections. It contrasts two readings of the reform, as a tool to reduce fragmentation and as protection for established parties against new competitors. This entry summarises the findings; the full paper develops the theoretical framework, the method and the limitations.</p>
+      <h2>Data and methods</h2>
+      <p>The analysis uses official data from the Electoral Service (SERVEL): each party's members by region as of 30 September 2026, the regions where each party is registered, the final 2025 roll and municipality-level results of the 2024 elections. For the fifteen registered parties, it computes compliance with both thresholds, the share of their 2024 vote cast in regions where they are currently below the threshold and, with a D'Hondt simulation validated against the 2024 winners, what would happen to their pact's seats if their vote were removed from the ballot. All processing is reproducible in R.</p>
+      <h2>Five findings</h2>
+      <h3>1. The effective threshold rises by 70%</h3>
+      <p>The move from 0.25% to 0.3% suggests a 20% increase, but the change in denominator amplifies it. The current minimums, set by SERVEL, are calculated on valid votes, which in 2025 were 68.6% of the roll. Calculating the threshold on all registered voters raises the required figure by 70.2%. In the Metropolitan Region, the maintenance threshold rises from 5,097 to 9,121 members.</p>
+      <h3>2. Four parties do not reach eight regions</h3>
+      <p>The Liberal Party, Evópoli, the FRVS and the Christian Party of Chile are below the maintenance threshold (0.15%) in so many regions that they do not reach the legal minimum. The Liberal Party needs 1,672 more members to reach eight regions, Evópoli 745 and the FRVS 383, provided they recruit them in the regions with the smallest gap. The Christian Party of Chile, registered in three regions, must register in five new ones at the 0.3% threshold. Under the current rule, the Liberal Party, Evópoli and the FRVS would keep eight regions or more, so their risk is an effect of the reform.</p>
+      <figure>
+        <img src="../../img/reforma-sistema-politico/g1-matriz-cumplimiento.png" alt="Matrix of parties by region indicating whether each party is above 0.3%, between 0.15% and 0.3%, below 0.15% or not registered" loading="lazy">
+        <figcaption>Each party's status relative to the membership thresholds, by region, as of 30 September 2026. Author's analysis of SERVEL data (labels in Spanish).</figcaption>
+      </figure>
+      <h3>3. Getting in is much harder than staying in</h3>
+      <p>Under the maintenance threshold, 4 of the 15 registered parties fail; under the registration threshold, 13 would fail. Of the 224 regions where parties are registered, 55 are below the maintenance threshold and 168 below the registration threshold. The reform does not create this asymmetry, because the 50% rule already existed, but it keeps it while raising both thresholds and removing the option of registering in three contiguous regions.</p>
+      <figure>
+        <img src="../../img/reforma-sistema-politico/g2-doble-umbral.png" alt="Dot chart of the number of regions where each party meets the maintenance and registration thresholds, with a line at eight regions" loading="lazy">
+        <figcaption>Regions where each party meets the maintenance and registration thresholds. The dotted line marks the minimum of eight regions (labels in Spanish).</figcaption>
+      </figure>
+      <h3>4. Risk depends on size, not concentration</h3>
+      <p>Parties with membership concentrated in a few regions were expected to have more regions below the threshold, but that is not the case. The nationalisation of membership is not significantly correlated with regions below the threshold (ρ = −0.31), while the total number of members explains almost all the variation (ρ = −0.90). The rule penalises a lack of members rather than their concentration, in a system where party members are 2.9% of the roll.</p>
+      <h3>5. The reform also removes large parties from some regions</h3>
+      <p>Under the current rule, the Republican Party would have all sixteen regions above the threshold; under the new one, it has nine, and the other seven accounted for 81% of its 2024 council vote. The PPD, the PDC and the Radical Party have between 40% and 54% of their vote in regions where they are currently below the threshold. For these parties, the cost is not dissolution but the need to recruit members or run candidates under another label in those regions.</p>
+      <figure>
+        <img src="../../img/reforma-sistema-politico/g3-exposicion-voto.png" alt="Bar chart of the percentage of each party's 2024 vote cast in regions where it is currently exposed, for councillors and regional councillors" loading="lazy">
+        <figcaption>Share of each party's 2024 vote cast in regions where it is currently exposed. Author's analysis of SERVEL data (labels in Spanish).</figcaption>
+      </figure>
+      <h2>The effect on seats</h2>
+      <p>Excluding a party is not neutral for its pact. In the simulation on the 2024 council elections, Evópoli's pact would have lost a seat in 35% of the exposed municipalities where it competed, the FRVS pact in 26% and the Liberal Party's pact in 18%. It is enough for between a third and just over half of the excluded party's vote to leave the pact for the pact to lose the seat. The effect does not depend on the number of councillors elected in the municipality, and of the 282 council seats the pacts would lose, only 35% would go to another list of the same bloc.</p>
+      <figure>
+        <img src="../../img/reforma-sistema-politico/g4-fraccion-critica.png" alt="Box plot of the share of the excluded party's vote that must leave the pact for it to lose a councillor, by party" loading="lazy">
+        <figcaption>Critical share of the excluded party's vote in the council election. Each point is a municipality in an exposed region (labels in Spanish).</figcaption>
+      </figure>
+      <h2>Scope</h2>
+      <p>It is an ex ante assessment. The law has not been published, the Constitutional Court could modify its content and the eighteen-month period allows parties to recruit members, so the results describe the situation as of 30 September 2026 rather than a forecast for 2028. The simulation assumes the 2024 supply of candidates would be repeated, except for the excluded party. Data and code are public, so the analysis can be updated with each new membership release from SERVEL.</p>
+      <p><em>Version 2.0.</em> Corrects the threshold in force before the reform, which version 1.0 calculated on all voters and without the 500-member minimum, and clarifies the 2028 calendar and the interpretation of the contiguous-regions rule.</p>
+      <h2>How to cite</h2>
+      <p class="cite">Bottinelli Baltra, L. (2026). <em>Entrar y permanecer: el doble umbral de afiliación de la reforma al sistema político y la oferta partidaria de 2028</em> (Documento de trabajo N.° 3, versión 2.0). <a href="https://doi.org/10.5281/zenodo.24030166">https://doi.org/10.5281/zenodo.24030166</a></p>
+      <p>The R code and processed data for this version are archived in Zenodo: <a href="https://doi.org/10.5281/zenodo.24030314">https://doi.org/10.5281/zenodo.24030314</a>.</p>
+      <a class="back" href="../blog.html">← Back to the blog</a>
+    </article>
+  </main>
+
+  <footer class="site">
+    Lucas Bottinelli Baltra · Santiago, Chile
+  </footer>
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var saved = null; try { saved = localStorage.getItem('theme'); } catch (e) {}
+      if (saved) root.setAttribute('data-theme', saved);
+      function current() {
+        if (root.getAttribute('data-theme')) return root.getAttribute('data-theme');
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.addEventListener('DOMContentLoaded', function () {
+        var btn = document.getElementById('themeToggle');
+        if (!btn) return;
+        btn.addEventListener('click', function () {
+          var next = current() === 'dark' ? 'light' : 'dark';
+          root.setAttribute('data-theme', next);
+          try { localStorage.setItem('theme', next); } catch (e) {}
+        });
+      });
+    })();
+  </script>
+  <script>
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a.lang-toggle');
+      if (a) { try { localStorage.setItem('lang', a.getAttribute('data-lang')); } catch (err) {} }
+    });
+  </script>
+</body>
+</html>

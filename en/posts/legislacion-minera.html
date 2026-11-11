@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The mining agenda in the Chilean Congress — Lucas Bottinelli Baltra</title>
+  <meta name="description" content="Working Paper No. 6. Changes in bill text, legislative timing and territorial voting in legislation affecting mining in Chile, 2018–2026.">
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+  <link rel="alternate" hreflang="es" href="https://lucasbb1.github.io/posts/legislacion-minera.html">
+  <link rel="alternate" hreflang="en" href="https://lucasbb1.github.io/en/posts/legislacion-minera.html">
+  <link rel="alternate" hreflang="x-default" href="https://lucasbb1.github.io/posts/legislacion-minera.html">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%231f4e5f%22/%3E%3Ctext x=%2216%22 y=%2221%22 font-family=%22Georgia,serif%22 font-size=%2214%22 font-weight=%22700%22 fill=%22%23ffffff%22 text-anchor=%22middle%22%3ELB%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="site">
+    <nav>
+      <a class="brand" href="../index.html">Lucas Bottinelli Baltra</a>
+      <span class="nav-tools"><a class="lang-toggle" href="../../posts/legislacion-minera.html" hreflang="es" lang="es" data-lang="es" title="Leer en español" aria-label="Leer en español">ES</a><button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">◐</button></span>
+      <div class="nav-links">
+        <a class="navlink" href="../index.html">Home</a>
+        <a class="navlink" href="../experiencia.html">Experience</a>
+        <a class="navlink" href="../investigacion.html">Research</a>
+        <a class="navlink" href="../consultoria.html">Consulting</a>
+        <a class="navlink active" href="../blog.html">Blog</a>
+        <a class="navlink" href="../cv.html">CV</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <article class="post">
+      <h1>The mining agenda in the Chilean Congress: votes, parties, territory and changes in bill text, 2018–2026</h1>
+      <p class="post-meta">Lucas Bottinelli Baltra (<a href="https://orcid.org/0009-0000-4865-7261">ORCID 0009-0000-4865-7261</a>) · MA candidate in Political Science, Pontificia Universidad Católica de Chile<br>Working Paper No. 6 · November 2026 · Not peer reviewed · Full paper in Spanish</p>
+      <div class="doc-links">
+        <a href="../../documentos/Bottinelli-Baltra_2026_Legislacion-minera.pdf">Full paper (PDF, Spanish)</a>
+        <a href="https://github.com/LucasBB1/Legislacion-Minera">Data and code</a>
+        <a href="https://doi.org/10.5281/zenodo.24124288">DOI: 10.5281/zenodo.24124288</a>
+      </div>
+      <p>Between 2019 and 2026 Congress passed the mining royalty, two reforms of the mining fee regime, the Water Code reform, the Biodiversity and Protected Areas Service, a framework law on sectoral permits, a desalination law and a tax reform with royalty stability for large projects. Few sectors have been legislated so much in so little time.</p>
+      <p>This working paper asks how much the text of those bills changes during the legislative process, what drives their pace and what explains legislators' votes. It contrasts three explanations, bloc, ideological position and the weight of mining in district employment. This entry summarises the findings; the full paper develops the theoretical framework, the method and the limitations.</p>
+      <h2>Data and methods</h2>
+      <p>The universe includes 21 bills selected with an explicit criterion, covering mining laws proper, reforms of the water, permits, environmental assessment and protected areas regimes, and tax reforms with mining provisions. The analysis uses 427 Senate legislative documents, a text reuse measure that compares word sequences across stages and more than a million roll-call votes, merged with each district's mining employment from the 2024 Census. Votes are analysed with models that compare each deputy with themselves on mining and non-mining votes, with robustness tests, a permutation test and a Senate replication. All processing is reproducible in R.</p>
+      <h2>Five findings</h2>
+      <h3>1. The bill that goes in is not the law that comes out</h3>
+      <p>Of the four private members' bills that became law, including the royalty and desalination, between 2% and 4% of the original text survived. Executive bills kept between 31% and 84%, but even in them between 31% and 78% of the final text was written in Congress.</p>
+      <figure>
+        <img src="../../img/legislacion-minera/g1-cambio-texto.png" alt="Bar chart of the share of the original text that survives in the law and the share of the final text that is new, by bill" loading="lazy">
+        <figcaption>Share of the original text that survives in the text sent to the executive and share of that text that is new (labels in Spanish).</figcaption>
+      </figure>
+      <h3>2. Executive priority sets the pace</h3>
+      <p>Executive bills passed under the government that introduced them were published after a median of 195 days. Those that crossed changes of government took more than eight years, and private members' bills advanced only when a government adopted them.</p>
+      <h3>3. Territory matters on some bills, not all</h3>
+      <p>On mining bills, deputies from the seven districts where mining exceeds 5% of employment vote against their party in 6.2% of contested votes, against 3.3% for other deputies. The effect survives dropping each district and a permutation test, but it is concentrated in the Sectoral Permits Framework Law and the royalty, it does not appear in the water, protected areas or environmental enforcement reforms, and it is not observed in the Senate.</p>
+      <figure>
+        <img src="../../img/legislacion-minera/g2-disidencia.png" alt="Bar chart of the share of votes against the party majority on mining and non-mining bills, by whether the district is a mining district" loading="lazy">
+        <figcaption>Votes against the party majority in contested votes, Chamber of Deputies, 2018–2026 (labels in Spanish).</figcaption>
+      </figure>
+      <figure>
+        <img src="../../img/legislacion-minera/g4-robustez.png" alt="Coefficient plot of the territorial effect in the main specification and in the robustness tests" loading="lazy">
+        <figcaption>Effect of representing a mining district on the probability of voting against the party, main specification and robustness tests (labels in Spanish).</figcaption>
+      </figure>
+      <h3>4. Territory moderates each bloc from its own side</h3>
+      <p>The left and centre-left from mining districts were less supportive of permit streamlining, and the right from those districts broke more often with their party on the royalty, a tax that channels part of its revenue to mining regions. The effect does not always favour industry, nor always the state.</p>
+      <h3>5. Lithium policy was made without a law</h3>
+      <p>The National Lithium Strategy was implemented administratively, and the bill to create a national lithium company was never sent to Congress. Part of the decisions that matter for the sector leaves no trace in roll-call votes or in the text of laws.</p>
+      <h2>Scope</h2>
+      <p>The territorial effect rests on two bills, and the equal-weight average across bills is not significant. The text measure does not distinguish substantive from drafting changes, so it is complemented by manual coding of the main laws' parameters. The analysis does not observe committee votes, and the 2026 agenda is still unfolding. Data and code are public, so the analysis can be updated as the SEIA and SMA reforms progress.</p>
+      <h2>How to cite</h2>
+      <p class="cite">Bottinelli Baltra, L. (2026). <em>La agenda minera en el Congreso chileno: votos, partidos, territorio y cambios en el texto, 2018–2026</em> (Documento de trabajo N.° 6). <a href="https://doi.org/10.5281/zenodo.24124288">https://doi.org/10.5281/zenodo.24124288</a></p>
+      <p>The R code and processed data for this version are archived in Zenodo: <a href="https://doi.org/10.5281/zenodo.24124549">https://doi.org/10.5281/zenodo.24124549</a>.</p>
+      <a class="back" href="../blog.html">← Back to the blog</a>
+    </article>
+  </main>
+
+  <footer class="site">
+    Lucas Bottinelli Baltra · Santiago, Chile
+  </footer>
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var saved = null; try { saved = localStorage.getItem('theme'); } catch (e) {}
+      if (saved) root.setAttribute('data-theme', saved);
+      function current() {
+        if (root.getAttribute('data-theme')) return root.getAttribute('data-theme');
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.addEventListener('DOMContentLoaded', function () {
+        var btn = document.getElementById('themeToggle');
+        if (!btn) return;
+        btn.addEventListener('click', function () {
+          var next = current() === 'dark' ? 'light' : 'dark';
+          root.setAttribute('data-theme', next);
+          try { localStorage.setItem('theme', next); } catch (e) {}
+        });
+      });
+    })();
+  </script>
+  <script>
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a.lang-toggle');
+      if (a) { try { localStorage.setItem('lang', a.getAttribute('data-lang')); } catch (err) {} }
+    });
+  </script>
+</body>
+</html>
