@@ -1,4 +1,5 @@
-.Rproj.user
+data/raw/
 .Rhistory
 .RData
-.Ruserdata
+.Rproj.user/
+__pycache__/
