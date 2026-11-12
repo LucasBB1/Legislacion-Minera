@@ -2,7 +2,7 @@
 
 Código en R y datos del **Documento de trabajo N.° 6** de Lucas Bottinelli Baltra. El estudio mide cuánto cambia el texto de los proyectos de ley que afectan a la minería durante su tramitación, cuánto tardan y qué explica el voto de los diputados, con el bloque, la posición ideológica y el empleo minero del distrito como explicaciones rivales. Analiza 21 proyectos seleccionados con un criterio explícito, con pruebas de robustez, un modelo para el Senado y el caso de la Estrategia Nacional del Litio.
 
-**Documento:** [https://doi.org/10.5281/zenodo.24149934](https://doi.org/10.5281/zenodo.24149934) · **Código y datos:** [https://doi.org/10.5281/zenodo.24150095](https://doi.org/10.5281/zenodo.24150095)
+**Documento:** [https://doi.org/10.5281/zenodo.24124287](https://doi.org/10.5281/zenodo.24124287) · **Código y datos:** [https://doi.org/10.5281/zenodo.24124548](https://doi.org/10.5281/zenodo.24124548)
 
 **Autor:** Lucas Bottinelli Baltra · [lucasbb1.github.io](https://lucasbb1.github.io) · ORCID [0009-0000-4865-7261](https://orcid.org/0009-0000-4865-7261)
 
@@ -42,6 +42,6 @@ Código bajo licencia MIT (`LICENSE`). Datos, tablas, figuras y texto bajo CC BY
 
 ## Cómo citar
 
-Bottinelli Baltra, L. (2026). *La agenda minera en el Congreso chileno: votos, partidos, territorio y cambios en el texto, 2018–2026* (Documento de trabajo N.° 6). https://doi.org/10.5281/zenodo.24149934
+Bottinelli Baltra, L. (2026). *La agenda minera en el Congreso chileno: votos, partidos, territorio y cambios en el texto, 2018–2026* (Documento de trabajo N.° 6). https://doi.org/10.5281/zenodo.24124287
 
-Código y datos: Bottinelli Baltra, L. (2026). *Legislacion-Minera* (v1.1.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.24150095
+Código y datos: Bottinelli Baltra, L. (2026). *Legislacion-Minera* [Software]. Zenodo. https://doi.org/10.5281/zenodo.24124548
