@@ -133,23 +133,39 @@ La medida no distingue cambios de fondo de cambios de redacción, y una secuenci
 
 El análisis del voto usa las votaciones de Sala de la Cámara de Diputadas y Diputados en proyectos de ley entre marzo de 2018 y noviembre de 2026, que suman 8.135 votaciones y 1.013.480 votos individuales a favor o en contra. Se trabaja con las 5.122 votaciones disputadas, en las que votaron al menos 60 diputados y la minoría reunió al menos el 10% de los votos. De ellas, 253 corresponden a proyectos del universo, 109 a la Ley de Reconstrucción Nacional, 49 a la Ley Marco de Autorizaciones Sectoriales, 22 al royalty, 19 a la reforma al Código de Aguas, 18 al Servicio de Biodiversidad y Áreas Protegidas, 18 a la reforma a la Superintendencia del Medio Ambiente y 18 al resto. El partido de cada diputado en cada trimestre, su posición ideológica y su distrito provienen de la base del Documento de trabajo N.° 5 (Bottinelli Baltra, 2026b), donde la posición se estima con un modelo de puntos ideales dinámico.
 
-Los partidos se agrupan en cinco bloques ideológicos ordenados de izquierda a derecha, que son izquierda, centroizquierda, centro, derecha y derecha radical. Cada partido se asigna según su familia en la literatura y su coalición electoral, y la derecha radical sigue la definición de Mudde (2007) y la clasificación del Partido Republicano de Díaz et al. (2023). Los partidos sin una familia clara, que son el Partido de la Gente, la Federación Regionalista Verde Social y el Partido Progresista, se asignan al bloque cuya mediana de puntos ideales en la Sala está más cerca de la suya. El resultado para el Partido de la Gente, que queda en el centro, coincide con Mascareño et al. (2022), que lo ubican entre la Democracia Cristiana y Renovación Nacional. El Anexo C detalla la asignación.
+Los diputados se agrupan en cinco bloques ideológicos ordenados de izquierda a derecha, que son izquierda, centroizquierda, centro, derecha y derecha radical. La sección 4.4 expone los criterios de esa clasificación y la evidencia que la respalda.
 
 La exposición a la minería se mide con la proporción de ocupados en explotación de minas y canteras en las comunas de cada distrito, según el Censo de Población y Vivienda 2024 (Instituto Nacional de Estadísticas [INE], 2025). A nivel nacional esa proporción es 3,3%. Siete distritos superan el 5% y se denominan distritos mineros. Son el 1 (Arica y Parinacota, 5,8%), el 2 (Tarapacá, 9,6%), el 3 (Antofagasta, 17,4%), el 4 (Atacama, 17,9%), el 5 (Coquimbo, 12,0%), el 6 (Valparaíso interior, 6,0%) y el 15 (Rancagua y Cachapoal, 7,6%). Ningún otro distrito supera el 2,1%, de modo que el umbral separa dos grupos sin casos intermedios (Anexo A).
 
-### 4.4. Modelos
+### 4.4. Clasificación de los partidos en bloques
+
+La clasificación en bloques cumple dos funciones en el análisis. Ordena la descripción de las votaciones clave de la sección 6 y define la variable dependiente del modelo B, que es votar con la mayoría de los diputados de derecha y derecha radical. Cada partido se asigna con tres criterios aplicados en orden. El primero es su familia de partidos en la literatura comparada, el segundo es su coalición electoral y el tercero, reservado para los partidos sin una familia clara, es la cercanía de su mediana de puntos ideales en la Sala a la mediana de cada bloque.
+
+El bloque de derecha radical sigue la definición de familia de Mudde (2007), según la cual estos partidos comparten un núcleo ideológico que combina nativismo, autoritarismo y populismo. La categoría no designa una posición extrema en el eje izquierda y derecha ni una opción antidemocrática. Mudde distingue la derecha radical, que acepta los procedimientos de la democracia aunque se opone a valores de la democracia liberal como el pluralismo y la protección de las minorías, de la extrema derecha, que rechaza la democracia como régimen. En Chile, Díaz et al. (2023) clasifican al Partido Republicano como un partido de derecha radical populista. El Partido Nacional Libertario y el Partido Social Cristiano se asignan al bloque por el segundo criterio, porque compitieron con el Partido Republicano en el pacto Cambio por Chile en las elecciones parlamentarias de 2025 (Cereceda Sotta, 2025), y el Partido Conservador Cristiano, porque formó con él el Frente Social Cristiano en 2021 (El Mostrador, 2021).
+
+La literatura comparada también define una familia de izquierda radical. March y Mudde (2005) y March (2011) agrupan en ella a los partidos que rechazan la estructura socioeconómica del capitalismo contemporáneo y proponen estructuras económicas y de poder alternativas, e incluyen entre sus variantes a los partidos comunistas. Con esa definición aplicada solo a la etiqueta partidaria, el Partido Comunista podría formar un bloque propio. El documento no lo separa por dos razones. La primera, que es complementaria, es su trayectoria institucional, porque el partido integró la Nueva Mayoría desde 2013, tuvo ministros en el segundo gobierno de Michelle Bachelet y formó parte del gobierno de Gabriel Boric junto al Frente Amplio y al socialismo (Biblioteca del Congreso Nacional de Chile [BCN], s. f.). Esa trayectoria no basta por sí sola, porque Bale y Dunphy (2011) documentan que varios partidos europeos de izquierda radical han participado en gobiernos de coalición. La segunda razón, que es la decisiva, es empírica. Un bloque solo aporta información al análisis si sus miembros se distinguen de los bloques vecinos por su posición o por su voto, y en la Cámara de 2018 a 2026 esa distinción existe en la derecha y no en la izquierda.
+
+La posición de los partidos en la escala ideológica muestra esa asimetría (Tabla C3). En la izquierda, las medianas forman un continuo sin saltos marcados. El Partido Comunista, con una mediana de −8,43, no ocupa el extremo del bloque, porque el Frente Amplio (−9,43), Comunes (−8,71) y Convergencia Social (−8,65) se ubican más a la izquierda, y el mayor salto entre dos partidos consecutivos del bloque con al menos tres diputados es de 1,89 puntos. En la derecha, en cambio, la distancia entre la Unión Demócrata Independiente (5,45) y el Partido Nacional Libertario (9,70) es de 4,25 puntos, comparable solo con la que separa al centro de la derecha (4,32 puntos entre el Partido de la Gente y Evópoli). La asimetría no se refiere a la distancia respecto del centro, porque la mediana del bloque de izquierda (−8,21) está casi tan lejos del centro como la de la derecha radical (9,91). Se refiere a que en la derecha hay un grupo de partidos separado del resto por un salto en la escala, y en la izquierda no.
+
+El voto en la Sala confirma el mismo patrón (Tabla C4). En las votaciones disputadas, la mayoría del Partido Comunista coincidió con la del Partido Socialista en el 91,8% de los casos, una proporción similar a la del Partido Socialista con el Partido por la Democracia (93,3%) y mayor que la de la Unión Demócrata Independiente con Renovación Nacional (89,5%). Esa coincidencia fue estable entre gobiernos, con 91,1% durante el gobierno de Sebastián Piñera, cuando ambos partidos estaban en la oposición, y 91,8% durante el gobierno de Boric, cuando ambos estaban en el gobierno. El Partido Republicano, en cambio, coincidió con Renovación Nacional en el 73,8% de las votaciones y con la Unión Demócrata Independiente en el 80,2% durante el gobierno de Boric, cuando los tres partidos estaban en la oposición, mientras que coincidió con el Partido Nacional Libertario en el 97,2% de las votaciones en que ambos tuvieron diputados. Desde marzo de 2026, con el Partido Republicano en el gobierno, la coincidencia entre los partidos de derecha sube a más de 94%. La derecha radical actuó como un bloque de voto propio en la oposición y converge con la derecha tradicional en el gobierno, mientras que el Partido Comunista votó con la izquierda socialista con independencia de su posición frente al gobierno.
+
+Los resultados no dependen de esta decisión. El coeficiente de la posición ideológica en el modelo B se mantiene entre 0,040 y 0,041 en las votaciones mineras y entre 0,033 y 0,034 en el resto cuando el Partido Comunista se separa como bloque propio, cuando se forma un bloque de izquierda radical más amplio con el Partido Comunista, el Partido Humanista, el Partido de Acción Humanista y el Partido Igualdad, y cuando el Partido Social Cristiano y el Partido Conservador Cristiano se trasladan a la derecha según su posición en la escala (Tabla C5). La clasificación es una afirmación empírica sobre el sistema de partidos chileno en este período y no una regla fija. Si un partido de la izquierda desarrollara un patrón de voto distinto del de sus socios, el esquema debería incorporar un bloque de izquierda radical.
+
+Los partidos sin una familia clara, que son el Partido de la Gente, la Federación Regionalista Verde Social y el Partido Progresista, se asignan al bloque cuya mediana de puntos ideales en la Sala está más cerca de la suya. El resultado para el Partido de la Gente, que queda en el centro, coincide con Mascareño et al. (2022), que lo ubican entre la Democracia Cristiana y Renovación Nacional. El Anexo C detalla la asignación.
+
+### 4.5. Modelos
 
 Se estiman dos modelos lineales de probabilidad. El modelo A evalúa la segunda hipótesis. Su variable dependiente es votar contra la mayoría del propio partido, definida solo para diputados de partidos con al menos tres miembros votando. Incluye efectos fijos de votación y de diputado por período legislativo, y su variable de interés es la interacción entre votación minera y distrito minero. Con esos efectos fijos, el coeficiente compara al mismo diputado en votaciones mineras y no mineras y estima si esa diferencia es mayor en los distritos mineros. Las diferencias estables entre diputados, como la disciplina individual, y las diferencias entre votaciones, como su nivel de conflicto, quedan absorbidas.
 
 El modelo B evalúa la primera y la tercera hipótesis. Su variable dependiente es votar con la mayoría de los diputados de derecha y derecha radical. Incluye efectos fijos de votación, la posición ideológica del diputado, su bloque y el empleo minero del distrito, y se estima por separado en las votaciones mineras, en el resto, que sirve como placebo, y en cada tipo de proyecto. En ambos modelos los errores estándar están agrupados por diputado.
 
-### 4.5. Pruebas de robustez
+### 4.6. Pruebas de robustez
 
 El modelo A se somete a seis grupos de pruebas. El primero cambia la composición de la muestra, porque más de dos quintos de las votaciones mineras disputadas corresponden a la Ley de Reconstrucción Nacional y una quinta parte a la Ley Marco de Autorizaciones Sectoriales. Se excluyen esos proyectos y se estima el modelo con el universo restringido a los 13 proyectos identificados por los títulos y solo con las reformas al agua, a las áreas protegidas y a la fiscalización ambiental. El segundo usa umbrales de 7% y 10% para definir los distritos mineros y umbrales de 5% y 20% para definir las votaciones disputadas. El tercero excluye uno a uno a los diputados de cada distrito minero.
 
 El cuarto estima el modelo por separado para cada proyecto con al menos cinco votaciones disputadas y promedia los coeficientes con igual peso, de modo que ningún proyecto domine el resultado por su número de votaciones. El quinto es una prueba de permutación. Se sortean al azar siete de los 28 distritos, se reestima el coeficiente con esa asignación y se repite el procedimiento 500 veces. El valor p es la proporción de sorteos con un coeficiente igual o mayor en valor absoluto que el observado. Esta prueba no depende de los supuestos de los errores agrupados, que pueden ser frágiles cuando el tratamiento se concentra en siete distritos. El sexto reestima el modelo en el Senado, con los votos de Sala de 2018 a 2026, el partido de cada senador en cada trimestre y el empleo minero de su circunscripción.
 
-### 4.6. Casos
+### 4.7. Casos
 
 Los cuatro proyectos de la agenda de 2026 se analizan como casos. Para cada uno se reconstruyen los parámetros del texto en cada trámite, las urgencias, las votaciones de Sala por bloque y, cuando corresponde, la comisión mixta, el veto y los requerimientos ante el Tribunal Constitucional. Cada caso se usa para contrastar lo que cada hipótesis predice con lo que ocurrió, y el resultado se resume en la Tabla 5. Se agrega la política del litio como un caso de contraste, en que la decisión se tomó por vía administrativa.
 
@@ -341,6 +357,10 @@ Alemán, E., y Saiegh, S. M. (2007). Legislative preferences, political parties,
 
 Arellano-Yanguas, J. (2011). Aggravating the resource curse: Decentralisation, mining and conflict in Peru. *The Journal of Development Studies, 47*(4), 617–638. https://doi.org/10.1080/00220381003706478
 
+Bale, T., y Dunphy, R. (2011). In from the cold? Left parties and government involvement since 1989. *Comparative European Politics, 9*(3), 269–291. https://doi.org/10.1057/cep.2010.12
+
+Biblioteca del Congreso Nacional de Chile. (s. f.). *Partido Comunista de Chile*. Historia Política. Recuperado el 11 de noviembre de 2026, de https://www.bcn.cl/historiapolitica/partidos_politicos/wiki/Partido_Comunista_de_Chile
+
 BioBioChile. (2026, 28 de octubre). *Congreso despacha primer proyecto minero de Kast que elimina la patente progresiva*. https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/10/28/congreso-despacha-primer-proyecto-minero-de-kast-que-elimina-la-patente-progresiva.shtml
 
 Bottinelli Baltra, L. (2026a). *Más allá de la regla: fragmentación electoral y parlamentaria en Chile tras el fin del sistema binominal, 2009–2026* (Documento de trabajo N.° 4). https://doi.org/10.5281/zenodo.23924456
@@ -351,9 +371,13 @@ Cain, B., Ferejohn, J., y Fiorina, M. (1987). *The personal vote: Constituency s
 
 Carey, J. M. (2002). Parties, coalitions, and the Chilean Congress in the 1990s. En S. Morgenstern y B. Nacif (Eds.), *Legislative politics in Latin America* (pp. 222–253). Cambridge University Press. https://doi.org/10.1017/CBO9780511615665.009
 
+Cereceda Sotta, S. (2025, 8 de agosto). *"Cambio por Chile": Partidos Republicano, Social Cristiano y Nacional Libertario inscriben pacto parlamentario ante el Servel*. Pauta. https://www.pauta.cl/actualidad/2025/08/08/cambio-por-chile-partidos-republicano-social-cristiano-y-nacional-libertario-inscriben-pacto-parlamentario-ante-el-servel.html
+
 Diario Constitucional. (2026, 14 de mayo). *Ingresan proyecto de ley que crea régimen especial para minerales críticos y tierras raras en Chile*. https://www.diarioconstitucional.cl/2026/05/14/ingresan-proyecto-de-ley-que-crea-regimen-especial-para-minerales-criticos-y-tierras-raras-en-chile/
 
 Díaz, C., Rovira Kaltwasser, C., y Zanotti, L. (2023). The arrival of the populist radical right in Chile: José Antonio Kast and the "Partido Republicano". *Journal of Language and Politics, 22*(3), 342–359. https://doi.org/10.1075/jlp.22131.dia
+
+El Mostrador. (2021, 6 de agosto). *Frente Social Cristiano, el nuevo pacto parlamentario conformado por el partido de José Antonio Kast para competir en elecciones*. https://www.elmostrador.cl/elecciones-2021/2021/08/06/frente-social-cristiano-el-nuevo-pacto-parlamentario-conformado-por-el-partido-de-jose-antonio-kast-para-competir-en-elecciones/
 
 Fairfield, T. (2015). *Private wealth and public revenue in Latin America: Business power and tax politics*. Cambridge University Press. https://doi.org/10.1017/CBO9781316104767
 
@@ -380,6 +404,10 @@ Ley N.° 21.813. Sobre el uso de agua de mar para desalinización. (2026, 12 de 
 Ley N.° 21.850. Para la reconstrucción nacional y el desarrollo económico y social. (2026, 17 de octubre). Biblioteca del Congreso Nacional. https://www.bcn.cl/leychile/navegar?idNorma=1229250
 
 Ley N.° 21.853. Modifica el Código de Minería y las leyes números 21.420 y 21.649, en materia de amparo minero y otras que indica. (2026, 5 de noviembre). Biblioteca del Congreso Nacional. https://www.bcn.cl/leychile/navegar?idNorma=1229799
+
+March, L. (2011). *Radical left parties in Europe*. Routledge. https://doi.org/10.4324/9780203154878
+
+March, L., y Mudde, C. (2005). What's left of the radical left? The European radical left after 1989: Decline and mutation. *Comparative European Politics, 3*(1), 23–49. https://doi.org/10.1057/palgrave.cep.6110052
 
 Mascareño, A., Rozas, J., Lang, B., y Henríquez, P. A. (2022). *Partido de la Gente. La construcción del individualismo posdemocrático* (Puntos de Referencia N.° 630). Centro de Estudios Públicos. https://static.cepchile.cl/uploads/c22/2022/11/2022-Mascareno-et-al-PdG.pdf
 
@@ -504,7 +532,7 @@ Wilkerson, J., Smith, D., y Stramp, N. (2015). Tracing the flow of policy ideas 
 | Derecha | Unión Demócrata Independiente, Renovación Nacional, Evópoli y Partido Regionalista Independiente |
 | Derecha radical | Partido Republicano, Partido Nacional Libertario, Partido Social Cristiano y Partido Conservador Cristiano |
 
-*Nota.* Los partidos se asignan según su familia en la literatura y su coalición electoral. La Federación Regionalista Verde Social, el Partido Progresista y el Partido de la Gente se asignan al bloque con la mediana de puntos ideales más cercana a la suya (Tabla C2). Los independientes asociados a un partido se asignan al bloque de ese partido, y los independientes sin partido quedan fuera de los bloques. En el modelo de disidencia, la mayoría del partido se calcula con la etiqueta de militancia de la base del Documento de trabajo N.° 5. Elaboración propia.
+*Nota.* Los partidos se asignan según su familia en la literatura y su coalición electoral (sección 4.4). La Federación Regionalista Verde Social, el Partido Progresista y el Partido de la Gente se asignan al bloque con la mediana de puntos ideales más cercana a la suya (Tabla C2). Los independientes asociados a un partido se asignan al bloque de ese partido, y los independientes sin partido quedan fuera de los bloques. En el modelo de disidencia, la mayoría del partido se calcula con la etiqueta de militancia de la base del Documento de trabajo N.° 5. Elaboración propia.
 
 **Tabla C2.** Mediana de los puntos ideales por bloque y asignación de los partidos sin familia clara, Cámara de Diputadas y Diputados, 2018–2026
 
@@ -520,3 +548,58 @@ Wilkerson, J., Smith, D., y Stramp, N. (2015). Tracing the flow of policy ideas 
 | Partido de la Gente | −0,16 | Centro |
 
 *Nota.* Puntos ideales trimestrales del Documento de trabajo N.° 5, en una escala en que los valores negativos corresponden a la izquierda y los positivos a la derecha. La mediana de cada bloque excluye a los partidos sin familia clara. Elaboración propia.
+
+**Tabla C3.** Mediana de los puntos ideales de los partidos con al menos tres diputados y salto respecto del partido siguiente, Cámara de Diputadas y Diputados, 2018–2026
+
+| Partido | Bloque | Mediana | Diputados | Salto al siguiente |
+|---|---|---|---|---|
+| Frente Amplio | Izquierda | −9,43 | 26 | 0,73 |
+| Comunes | Izquierda | −8,71 | 3 | 0,05 |
+| Convergencia Social | Izquierda | −8,65 | 8 | 0,22 |
+| Partido Comunista | Izquierda | −8,43 | 21 | 1,89 |
+| Revolución Democrática | Izquierda | −6,54 | 14 | 0,50 |
+| Partido Humanista | Izquierda | −6,05 | 3 | 1,08 |
+| Partido Socialista | Centroizquierda | −4,97 | 30 | 0,17 |
+| Partido Liberal | Centroizquierda | −4,80 | 3 | 0,37 |
+| Partido por la Democracia | Centroizquierda | −4,43 | 12 | 0,14 |
+| Federación Regionalista Verde Social | Centroizquierda | −4,30 | 4 | 0,60 |
+| Partido Liberal (PL) | Centroizquierda | −3,70 | 3 | 0,72 |
+| Partido Radical | Centroizquierda | −2,98 | 6 | 1,85 |
+| Partido Demócrata Cristiano | Centro | −1,13 | 25 | 0,43 |
+| Demócratas | Centro | −0,70 | 4 | 0,53 |
+| Partido de la Gente | Centro | −0,16 | 19 | 4,32 |
+| Evópoli | Derecha | 4,16 | 8 | 0,31 |
+| Renovación Nacional | Derecha | 4,46 | 44 | 0,14 |
+| Partido Social Cristiano | Derecha radical | 4,61 | 4 | 0,84 |
+| Unión Demócrata Independiente | Derecha | 5,45 | 49 | 4,25 |
+| Partido Nacional Libertario | Derecha radical | 9,70 | 11 | 1,36 |
+| Partido Republicano | Derecha radical | 11,06 | 33 |  |
+
+*Nota.* Partidos ordenados de izquierda a derecha según la mediana de sus puntos ideales trimestrales. El salto es la diferencia entre la mediana del partido y la del partido siguiente en la escala. El Partido Liberal aparece con dos códigos en la base de origen y se muestra por separado. Se omiten los partidos con menos de tres diputados. Elaboración propia con el script 11.
+
+**Tabla C4.** Coincidencia de la mayoría de cada par de partidos en las votaciones disputadas, por gobierno, Cámara de Diputadas y Diputados, 2018–2026 (%)
+
+| Par de partidos | Piñera (2018–2022) | Boric (2022–2026) | Kast (desde 2026) | Total | Votaciones |
+|---|---|---|---|---|---|
+| Partido Comunista y Frente Amplio |  | 95,4 | 97,5 | 95,8 | 1.656 |
+| Partido Comunista y Partido Socialista | 91,1 | 91,8 | 95,0 | 91,8 | 4.938 |
+| Frente Amplio y Partido Socialista |  | 92,7 | 95,4 | 93,2 | 1.665 |
+| Partido Socialista y Partido por la Democracia | 93,5 | 93,0 | 92,4 | 93,3 | 2.930 |
+| Unión Demócrata Independiente y Renovación Nacional | 92,5 | 86,7 | 95,3 | 89,5 | 5.023 |
+| Partido Republicano y Unión Demócrata Independiente |  | 80,2 | 98,5 | 82,2 | 3.036 |
+| Partido Republicano y Renovación Nacional |  | 73,8 | 94,7 | 76,0 | 3.015 |
+| Partido Nacional Libertario y Partido Republicano |  | 97,0 | 97,5 | 97,2 | 781 |
+| Partido Nacional Libertario y Unión Demócrata Independiente |  | 85,9 | 96,5 | 90,2 | 785 |
+
+*Nota.* Porcentaje de las votaciones disputadas en que la mayoría de ambos partidos votó en el mismo sentido. Se consideran los partidos con al menos tres diputados votando y se excluyen los empates internos. Las celdas vacías corresponden a períodos en que uno de los partidos no alcanzaba ese mínimo o no existía con esa etiqueta. Elaboración propia con el script 11.
+
+**Tabla C5.** Coeficiente de la posición ideológica en el modelo B con clasificaciones alternativas de los bloques
+
+| Clasificación | Votaciones mineras | Resto de las votaciones |
+|---|---|---|
+| Clasificación del documento | 0,040 (0,0033) | 0,033 (0,0020) |
+| Partido Comunista como bloque propio | 0,040 (0,0033) | 0,033 (0,0020) |
+| Bloque de izquierda radical amplio | 0,040 (0,0033) | 0,033 (0,0020) |
+| Derecha radical solo con republicanos y libertarios | 0,041 (0,0033) | 0,034 (0,0020) |
+
+*Nota.* Modelos lineales de probabilidad con efectos fijos de votación y errores estándar agrupados por diputado entre paréntesis. Todos los coeficientes son significativos al 0,1%. El bloque de izquierda radical amplio reúne al Partido Comunista, el Partido Humanista, el Partido de Acción Humanista y el Partido Igualdad. La última fila traslada al Partido Social Cristiano y al Partido Conservador Cristiano al bloque de derecha. Elaboración propia con el script 11.

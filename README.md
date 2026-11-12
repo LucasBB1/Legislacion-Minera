@@ -2,7 +2,7 @@
 
 Código en R y datos del **Documento de trabajo N.° 6** de Lucas Bottinelli Baltra. El estudio mide cuánto cambia el texto de los proyectos de ley que afectan a la minería durante su tramitación, cuánto tardan y qué explica el voto de los diputados, con el bloque, la posición ideológica y el empleo minero del distrito como explicaciones rivales. Analiza 21 proyectos seleccionados con un criterio explícito, con pruebas de robustez, un modelo para el Senado y el caso de la Estrategia Nacional del Litio.
 
-**Documento:** [https://doi.org/10.5281/zenodo.24124288](https://doi.org/10.5281/zenodo.24124288) · **Código y datos:** [https://doi.org/10.5281/zenodo.24124549](https://doi.org/10.5281/zenodo.24124549)
+**Documento:** [https://doi.org/10.5281/zenodo.24149934](https://doi.org/10.5281/zenodo.24149934) · **Código y datos:** [https://doi.org/10.5281/zenodo.24124549](https://doi.org/10.5281/zenodo.24124549)
 
 **Autor:** Lucas Bottinelli Baltra · [lucasbb1.github.io](https://lucasbb1.github.io) · ORCID [0009-0000-4865-7261](https://orcid.org/0009-0000-4865-7261)
 
@@ -25,9 +25,10 @@ Código en R y datos del **Documento de trabajo N.° 6** de Lucas Bottinelli Bal
 | `R/08_figura_robustez.R` | Figura 4 y Figura B1 |
 | `R/09_senado.R` | Modelo de disidencia en el Senado con el empleo minero de cada circunscripción |
 | `R/10_bloques.R` | Mediana de los puntos ideales por partido y bloque, y asignación de los partidos sin familia clara |
+| `R/11_bloques_justificacion.R` | Evidencia para la clasificación en bloques: saltos entre medianas de partidos, coincidencia de las mayorías partidarias por gobierno y robustez del modelo B a clasificaciones alternativas (Tablas C3 a C5) |
 | `documento/build6.py` | Arma el documento Word desde `documento/manuscrito.md` |
 
-Orden de ejecución: los scripts de `R/` en orden numérico (01, 01b, 01c, 01d, 01e y 02 a 10). La conversión a texto requiere LibreOffice (`soffice`) y `pdftotext` (poppler). En Linux, ejecutar los scripts con `LC_ALL=C.UTF-8`. El documento Word se arma con `documento/build6.py` (Python y python-docx), igual que en los documentos de trabajo anteriores.
+Orden de ejecución: los scripts de `R/` en orden numérico (01, 01b, 01c, 01d, 01e y 02 a 11). La conversión a texto requiere LibreOffice (`soffice`) y `pdftotext` (poppler). En Linux, ejecutar los scripts con `LC_ALL=C.UTF-8`. El documento Word se arma con `documento/build6.py` (Python y python-docx), igual que en los documentos de trabajo anteriores.
 
 ## Datos
 
@@ -41,6 +42,6 @@ Código bajo licencia MIT (`LICENSE`). Datos, tablas, figuras y texto bajo CC BY
 
 ## Cómo citar
 
-Bottinelli Baltra, L. (2026). *La agenda minera en el Congreso chileno: votos, partidos, territorio y cambios en el texto, 2018–2026* (Documento de trabajo N.° 6). https://doi.org/10.5281/zenodo.24124288
+Bottinelli Baltra, L. (2026). *La agenda minera en el Congreso chileno: votos, partidos, territorio y cambios en el texto, 2018–2026* (Documento de trabajo N.° 6). https://doi.org/10.5281/zenodo.24149934
 
 Código y datos: Bottinelli Baltra, L. (2026). *Legislacion-Minera* (v1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.24124549

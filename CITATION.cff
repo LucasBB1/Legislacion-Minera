@@ -8,8 +8,8 @@ authors:
     given-names: "Lucas"
     orcid: "https://orcid.org/0009-0000-4865-7261"
     affiliation: "Pontificia Universidad Católica de Chile"
-version: "1.0.0"
-date-released: "2026-11-10"
+version: "1.1.0"
+date-released: "2026-11-11"
 license: MIT
 doi: "10.5281/zenodo.24124549"
 repository-code: "https://github.com/LucasBB1/Legislacion-Minera"
@@ -30,5 +30,5 @@ preferred-citation:
   year: 2026
   number: "6"
   collection-title: "Documento de trabajo"
-  doi: "10.5281/zenodo.24124288"
-  url: "https://doi.org/10.5281/zenodo.24124288"
+  doi: "10.5281/zenodo.24149934"
+  url: "https://doi.org/10.5281/zenodo.24149934"
